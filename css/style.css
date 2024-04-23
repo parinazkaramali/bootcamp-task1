@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0 ;
+}
+
+:root{
+    --color-primary: #219f95;
+  --color-secondary-light: #afcedd;
+  --color-secondary-dark: #234894;
+  --color-headings: #1e1e1e;
+  --color-body: #696969;
+  --rang-sefid: #fff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.btn{
+   padding: 2rem 2rem;
+   border: 0;
+   border-radius: 8px;
+   background-color: var(--color-primary);
+   color: var(--rang-sefid);
+   font-family: vazir;
+   font-weight: 700;
+   margin-top: 2rem;
+   cursor: pointer;
+}
+
+/* کدهای سکشن */
+.task{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns:repeat(1, 1fr) ;
+ }
+
+ /* کدهای بخش تبلت */
+
+ @media screen and (min-width:768px){
+    .task{
+            grid-template-columns:repeat(2, 1fr) ;
+     }
+    
+ }
+
+ /* کدهای بخش دسکتاپ */
+
+ @media screen and (min-width:1024px){
+    .task{
+            grid-template-columns:repeat(3, 1fr) ;
+     }
+    
+ }
